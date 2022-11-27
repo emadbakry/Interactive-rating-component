@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+
+
+:root {
+--main-color:hsl(25, 97%, 53%);
+}
+html {
+    font-family: 'Overpass', sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+
+    background-color: hsl(216, 12%, 8%);
+}
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.root {
+    
+    background-color: hsl(215deg 21% 16%);
+    border-radius: 15px;
+    margin:50px auto;
+    width: 90%;
+    max-width: 400px;
+}
+.root .box {
+    padding: 25px;
+}
+.up.icon {
+    direction: ltr;
+}
+.up.icon .star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: hsl(210deg 19% 18%);
+    margin-bottom: 30px;
+}
+.root .mid h2, .thankYou-box h2{
+    color: hsl(0, 0%, 100%);
+    margin: 5px auto;
+}
+.root .mid p, .thankYou-box p {
+    color: hsl(216, 12%, 54%);
+    line-height: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 20px auto;
+}
+.ratings {
+    display: flex;
+    justify-content: space-around;
+    direction: ltr;
+    /*ltr: to make it the same order accross browsers */
+}
+.ratings a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 50px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(210deg 19% 18%);
+    transition: 0.4s;
+}
+
+.ratings a:hover {
+    transition: 0.1s;
+    background-color:var(--main-color);
+    color: #fff;
+}
+/* diff transitions on diff states makes it beautiful and enjoyable */
+.ratings a.active {
+    transition: 0.1s;
+    background-color: hsl(217, 12%, 63%);
+    color: #fff;
+}
+
+/* submit btn */
+.submit button {
+    background-color: var(--main-color);
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    margin: 30px auto 10px;
+    padding: 15px 0;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.submit button:hover {
+    color: var(--main-color);
+    background-color: #fff;
+}
+
+
+
+
+/* content after submitting */
+
+/* it will appear once u submit */
+.thankYou-box {
+    padding: 30px;
+    display: none;
+    direction: ltr;
+    text-align: center;
+}
+.rateNum p {
+    width: fit-content;
+    border-radius: 50px;
+    margin: 20px auto;
+    color: var(--main-color);
+    padding: 10px;
+    background-color:hsl(210deg 19% 18%) ;
+}
+.img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.thankYou-box img{
+    margin: auto;
+}
+
+/* footer styles */
+.attribution {
+    margin: 10px;
+    background-color: var(--main-color,blueviolet);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: calc(1vw + 4px);
+}
+
+.attribution a {
+    margin: auto 5px;
+    text-decoration: none;
+    color: aqua;
+    letter-spacing: 1px;
+}
