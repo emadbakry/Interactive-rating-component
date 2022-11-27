@@ -159,3 +159,25 @@ main {
     color: aqua;
     letter-spacing: 1px;
 }
+
+
+.ratings a.help {
+    position: relative;
+}
+.ratings a.help::after {
+    content: '';
+    border:transparent 16px solid;
+    border-right-color: var(--main-color);
+    right: -25px;
+    position: absolute;
+    top: calc(50% - 16px);
+    animation: help linear 0.3s alternate 15;
+}
+@keyframes help {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}

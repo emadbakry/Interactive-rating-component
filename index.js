@@ -23,6 +23,11 @@ let submitRating = () => {
         thankYou_Box.style.display = 'block';
         selectedNum.textContent = ratingSelected;
     } else {
+        let helpEle = document.querySelectorAll('.ratings a');
+        helpEle[helpEle.length - 1].classList.add('help');
+        setTimeout(() => {
+            helpEle[helpEle.length - 1].classList.remove('help');
+        }, 4000);
         // please select from 1 - 5
     }
 }
