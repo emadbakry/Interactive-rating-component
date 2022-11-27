@@ -12,8 +12,6 @@ window.onload = () => {
             })
         });   
 }
-    
-
 let submitRating = () => {
     let mainBox = document.querySelector('.root .box');
     let thankYou_Box = document.querySelector(".root .thankYou-box");
@@ -28,6 +26,5 @@ let submitRating = () => {
         setTimeout(() => {
             helpEle[helpEle.length - 1].classList.remove('help');
         }, 4000);
-        // please select from 1 - 5
     }
 }
